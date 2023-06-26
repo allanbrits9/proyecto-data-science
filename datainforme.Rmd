@@ -1,0 +1,40 @@
+Mortality rate attributed to unsafe water, unsafe sanitation and lack of
+hygiene (exposure to unsafeWater, Sanitation and Hygiene for All
+(WASH))
+Allan Astudillo, Constanza Castro, Ignacia Vega
+20.012.152-k, 17.480.610-1, 20.038.963-8
+
+Los  entregables iniciales definidos fueron:
+1. Elaborar un modelo que sirva para predecir la mortalidad
+2. Verificar que el modelo entrega una predicción certera comparando con el histórico
+3. Predecir un año en específico
+
+A raíz de las reuniones con el profesor a cargo, se llegó al acuerdo de que debíamos incluir otras bases de datos que nos permitieran realizar un análisis que presentara mayor complejidad, es por esto que se actualizaron los entregables definidos en primera instancia y se buscaron otras bases de datos:
+:
+De acuerdo al feedback de la presentación inicial, realizamos una nueva búsqueda de bases de datos que nos permitieron mejorar la información disponible para el desarrollo del proyecto. También se realizó el procesamiento necesario para la utilización de los datos.
+Se solucionó la falta de datos históricos para elaborar el modelo de predicción propuesto.
+Finalmente se cuenta con suficiente cantidad de datos pero aún no estaba definido el año que buscábamos predecir.
+
+
+Para llevar a cabo nuestro proyecto recurrimos a bases de datos que pertenecían al dominio de “Healthcare delivery and public (population) health”, en específico de WHO Statistics, cuyo sitio web es: https://apps.who.int/gho/data/node.resources. Y el objetivo definido: determinar qué tanto afectaba la resistencia antimicrobiana al momento de haber muerte por la falta de agua sanitizada en países de latinoamérica. 
+A continuación, se describe paso a paso la forma en la que desarrollamos nuestro proyecto:
+
+Paso 1: Seleccionamos tres bases de datos para desarrollar el proyecto:
+
+	-Resistencia antimicrobiana por patógeno
+	-Número de muertes por factor de riesgo
+	-Agua y sanitización
+
+Paso 2: Luego decidimos considerar para el análisis y procesamiento de datos solo países de América del Sur, siendo esta la región a la que nosotros también pertenecemos, nos pareció relevante trabajar con nuestro país y los países vecinos:
+
+Argentina, Colombia, Brasil, Bolivia, Ecuador, Perú, Venezuela, Chile, Uruguay, Paraguay, Trinidad y Tobago, Guyana, Surinam. A través de excel se procesaron las bases de datos eliminando los demás países, y se reordenó la información de manera de transponer los datos para dejarlos tabulados con la misma estructura en los tres archivos y posteriormente realizar el procesamiento en R Studio. 
+
+Paso 3: Se calcularon los promedios, moda, desviación estándar, esto con la finalidad de obtener a través de estas medidas una visión general del comportamiento de los datos y de las tendencias que se pudieran presentar. 
+
+Consideraciones:
+Para el procesamiento de nuestras bases de datos en R,se debía utilizar la distribución de poisson, ya que nos entrega “cual es la probabilidad de ocurrencia de un evento a partir de una frecuencia de ocurrencia media, en un intervalo de tiempo dado o una región en específico”. A pesar de tener claro cuales eran los datos a utilizar y qué función es la que debíamos aplicar sobre ellos en R, no fue posible procesar los datos y obtener resultados. 
+
+Conclusiones:
+El procesamiento de datos en R no arrojó resultados coherentes, esto se puede deber a la falta de conocimiento en cuanto al uso de software, a la falta de instancias en el uso de la herramienta o a un incorrecto preprocesamiento de las bases de datos.
+
+Sin embargo con el desarrollo de este proyecto a lo largo del semestre logramos aprender sobre el manejo y la importancia de las bases de datos en diversos contextos.Específicamente con nuestro tema, nos interesamos mucho con respecto a él. En el primer entregable, teníamos bases de datos distintas que las utilizadas al final, cambiaron las bases de datos originales, porque después de reuniones con el profesor y posterior análisis de nuestro grupo decidimos añadir bases de datos que explican (o intentan) los factores que podrían incidir en la tasa de mortalidad por factor de riesgo de contaminaciones del agua, poco acceso al agua potable, etc. Demoramos cantidades de tiempo considerables leyendo papers, reportes, resúmenes de publicaciones con respecto a la falta de acceso al agua, sus niveles de sanitización, los temas que pueden influir o como un país puede mejorar este problema. Nos enfocamos en los países de América del Sur para reducir nuestro análisis y ver la situación de nuestro sector del continente, además los países de América del sur presentan algunas similitudes lo que permitiría comparar los resultados. Finalmente como comentamos en los puntos anteriores, los resultados esperados no los cumplimos, nos quedamos con una decepción de no poder lograr el objetivo principal del proyecto de obtener los datos, pero a pesar de ello obtuvimos lo más importante que fue la experiencia y cómo realizar el procedimiento del trabajo con bases de datos aplicando data science. 
